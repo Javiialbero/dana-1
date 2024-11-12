@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clase de ASIR">
+    <meta name="description" content="Pagina web para solicitar ayudas">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function alert() {
+            alert("La Ayuda ha sido solicitada.")
+        }
+      
+    </script>
+</head>
+<body class="body1">
+    <div>
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre completo:</label>
+           <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+             <input type="email" id="email" name="email" required>
+              <label for="telefono">Teléfono:</label>
+               <input type="text" id="telefono" name="telefono" required>
+              <label for="cantidad">Numeros de personas:</label>
+             <input type="number" id="cantidad" name="cantidad" min="1" required>
+           <label for="zona">Ciudad Afectada:</label>
+          <select id="zona" name="zona" required>
+            <option value="">Seleccione una opción</option>
+             <option value="sedavi">Sedaví</option>
+              <option value="Paiporta">Paiporta</option>
+             <option value="Picanya">Picanya</option>
+             <option value="Massanasa">Massanasa</option>
+             <option value="Benetusser">Benetusser</option>
+             <option value="Ribarroja">Ribarroja</option>
+          </select>
+    
+          <button onclick="alert()" type="submit" class="boton">Solicitar Ayuda</button>
+        </form>
+      </div>
+
+      <footer>
+
+        <p>DELEGACIÓN DE PARTICIPACIÓN CIUDADANA Y ACCIÓN VECINAL</p>
+        <p>Servicio de Descentralización y Participación Ciudadana
+            Amadeo de Saboya Nº11
+            46010. Valencia
+            E-Mail: participacionciudadana@valencia.es</p>
+        <p> 2024 Ayudas DANA Valencia</p>
+    </footer>
+</body>
+</html>
